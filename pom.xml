@@ -103,12 +103,17 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+
 		<!-- log4j2 -->
 		<dependency>
-
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-log4j2</artifactId>
+		</dependency>
 
+		<!--Spring boot security 의존성 추가-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
 
 	</dependencies>

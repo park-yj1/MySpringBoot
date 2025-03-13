@@ -64,4 +64,9 @@ public class UserRestController {
 
         //결과값 : Id = 1 User가 삭제처리 되었습니다
     }
+    @GetMapping("/welcome")
+    public String welcome() {
+        return "Welcome this endpoint is not secure";
+    }
+
 }
