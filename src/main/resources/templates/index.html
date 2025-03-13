@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<meta charset="UTF-8">
+<body>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Date</th>
+    </tr>
+    <tr th:each="user : ${users}">
+        <td th:text="${user.name}"></td>
+        <td th:text="${user.email}"></td>
+        <td th:text="${#temporals.format(user.createdAt,'yyyy-MM-dd hh:mm E a')}"></td>
+
+        <!--
+            결과값 :
+            'yyyy-MM-dd hh:mm E a'  -> 2025-03-13 04:06 목 오후
+        -->
+    </tr>
+</table>
+</body>
+</html>
